@@ -1,4 +1,4 @@
-#include <srcslicepolicy.hpp>
+#include <srcslicepolicylocal.hpp>
 int main(int argc, char** argv){
         if(argc < 2){
             std::cerr<<"Syntax: ./srcslice [srcML file name]"<<std::endl;

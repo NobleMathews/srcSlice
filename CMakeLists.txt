@@ -29,7 +29,7 @@ find_package(LibXml2 REQUIRED)
 find_package(GTest REQUIRED)
 
 set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_FLAGS "-O0 -Wno-reorder -Wunused-variable -Wunused-parameter")
+set(CMAKE_CXX_FLAGS "-O0 -Wno-reorder -Wunused-variable -Wunused-parameter -Wno-narrowing")
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
@@ -43,5 +43,4 @@ include_directories(${LIBXML2_INCLUDE_DIR}
                     srcSAXEventDispatch/src/policy_classes
                     src/headers)
 add_subdirectory(src)
-add_subdirectory(test)
 add_subdirectory(srcSAXEventDispatch)
